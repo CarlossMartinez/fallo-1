@@ -3,41 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="Index.css" />
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <title>Portfolio Personal - Home</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      body {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+      .home-container {
+        width: 100%;
+        height: 100vh;
+        padding: 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+      }
+      .menu-section {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .btn {
+        font-size: 1rem;
+        padding: 15px;
+      }
+      .nav-icon {
+        font-size: 2rem;
+      }
+    </style>
   </head>
   <body>
-    <div class="Cartas">
-      <div>
-        <h1 class="titulo">¡Feliz Navidad!</h1>
+    <div class="home-container bg-white shadow rounded">
+      <!-- Nombre en la parte superior -->
+      <div class="text-center p-4 border-bottom">
+        <h1>Carlos Martinez Serrano</h1>
       </div>
-      <div class="grid">
-        <div class="grid-sizer">
-          <img
-            src="https://dedadi.com/wp-content/uploads/2015/03/GCC_1-2.jpg"
-            alt="img 1"
-          />
-          <p>El mejor adorno de Navidad es una gran sonrisa ¡Feliz Navidad!</p>
-        </div>
-        <div class="grid-item">
-          <img
-            src="https://slidechef.net/wp-content/uploads/2021/09/Christmas-Greeting-Google-Slides.jpg"
-            alt="Imagen 2"
-          />
-          <p>La Navidad es el día que une todos los tiempos.</p>
-        </div>
-        <div class="grid-item grid-item--width2">
-          <img
-            src="https://i.pinimg.com/originals/b7/e1/d8/b7e1d84702fd207505f22408f37350fc.jpg"
-            alt="Imagen 3"
-          />
-          <p>
-            Aunque el tiempo transcurra deprisa, la Navidad nos deja instantes
-            eternos.
-          </p>
-        </div>
+
+      <!-- Menú de navegación -->
+      <div class="menu-section d-flex flex-column p-4">
+        <a href="./sections/sobre_mi.html" class="btn btn-outline-primary mb-4">
+          <i class="bi bi-person nav-icon"></i> Sobre mí
+        </a>
+        <a
+          href="./sections/experiencia.html"
+          class="btn btn-outline-primary mb-4"
+        >
+          <i class="bi bi-briefcase nav-icon"></i> Experiencia
+        </a>
+        <a href="./sections/titulos.html" class="btn btn-outline-primary">
+          <i class="bi bi-book nav-icon"></i> Historial Académico
+        </a>
       </div>
     </div>
+
+    <!-- Bootstrap JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
